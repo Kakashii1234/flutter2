@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'components/shop_page.dart';
 
 void main() {
-  runApp(FruitSaladApp());
+  runApp(const MyApp());
 }
 
-class FruitSaladApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +34,7 @@ class FruitSaladApp extends StatelessWidget {
             ),
           ],
         ),
-        body: FruitSaladHome(), // moved to another file
+        body: ShopPage(),
       ),
     );
   }

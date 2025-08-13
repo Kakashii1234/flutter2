@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class FruitSaladHome extends StatelessWidget {
+class ShopPage extends StatelessWidget {
+  const ShopPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -50,10 +52,8 @@ class FruitSaladHome extends StatelessWidget {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  comboCard("Honey lime combo", " 2,000 EGP",
-                      "assets/images/honey.png"),
-                  comboCard("Berry mango combo", " 8,000 EGP",
-                      "assets/images/berry.png"),
+                  comboCard("Honey lime combo", " 2,000 EGP", "assets/images/honey.png"),
+                  comboCard("Berry mango combo", " 8,000 EGP", "assets/images/berry.png"),
                 ],
               ),
             ),
@@ -145,14 +145,10 @@ class FruitSaladHome extends StatelessWidget {
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: [
-            comboCard("Quinoa fruit salad", "10,000 EGP",
-                "assets/images/quinoa.png"),
-            comboCard("Tropical fruit salad", "10,000 EGP",
-                "assets/images/tropical.png"),
-            comboCard("Quinoa fruit salad", "10,000 EGP",
-                "assets/images/quinoa.png"),
-            comboCard("Tropical fruit salad", "10,000 EGP",
-                "assets/images/tropical.png"),
+            comboCard("Quinoa fruit salad", "10,000 EGP", "assets/images/quinoa.png"),
+            comboCard("Tropical fruit salad", "10,000 EGP", "assets/images/tropical.png"),
+            comboCard("Quinoa fruit salad", "10,000 EGP", "assets/images/quinoa.png"),
+            comboCard("Tropical fruit salad", "10,000 EGP", "assets/images/tropical.png"),
           ],
         ),
       ),
